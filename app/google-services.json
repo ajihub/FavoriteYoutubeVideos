@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "894976472308",
+    "firebase_url": "https://favoritevideos-d7db6-default-rtdb.firebaseio.com",
+    "project_id": "favoritevideos-d7db6",
+    "storage_bucket": "favoritevideos-d7db6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894976472308:android:85baf7a5766f0c60bf1aa1",
+        "android_client_info": {
+          "package_name": "com.example.favoriteyoutubevideos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894976472308-sduebltu0lg688ebvmkivkncmvptmkpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDstpHm1o4jUfU8ytLu7_FLRPTHVjNHDAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894976472308-sduebltu0lg688ebvmkivkncmvptmkpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
