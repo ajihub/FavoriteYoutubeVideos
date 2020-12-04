@@ -44,14 +44,14 @@ class MainActivity : AppCompatActivity() {
             val link = linkEditText.text.toString()
             val reason =  reasonEditText.text.toString()
             if(addEditButton.text.toString()== "Add"){
-                val restaurant = Video(rank = rank, title = title, link = link, reason = reason)
+                val restaurant = Video(rank = rankconv, title = title, link = link, reason = reason)
                 if(videoHandler.create(restaurant)){
                     Toast.makeText(applicationContext, "Video added", Toast.LENGTH_SHORT).show()
                     clearFields()
                 }
             }
             else if(addEditButton.text.toString() == "Update"){
-                val video = Video(id = videoGettingEdited.id, rank = rank, title = title,  link = link, reason = reason)
+                val video = Video(id = videoGettingEdited.id, rank = rankconv, title = title,  link = link, reason = reason)
                 if(videoHandler.update(video)){
                     Toast.makeText(applicationContext, "Video updated", Toast.LENGTH_SHORT).show()
                     clearFields()
@@ -75,7 +75,9 @@ class MainActivity : AppCompatActivity() {
         return when(item.itemId){
             R.id.edit_video ->{
                 videoGettingEdited = videos[info.position]
-                rankEditText.setText(videoGettingEdited.rank)
+                val nullableInt = videoGettingEdited.rank
+                val nonnullableInt = nullableInt!!
+                rankEditText.setText(""+nonnullableInt)
                 titleEditText.setText(videoGettingEdited.title)
                 linkEditText.setText(videoGettingEdited.link)
                 reasonEditText.setText(videoGettingEdited.reason)
